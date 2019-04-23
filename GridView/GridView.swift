@@ -42,7 +42,7 @@ open class GridView: UIScrollView {
     override open class var layerClass : AnyClass {
         return AnimatedLayer.self
     }
-
+    open var currentTimeLineView:UIView?
     /// Set `false` if you don't need to loop of view. Default is `true`.
     open var isInfinitable = true
     /// Set the vertical and horizontal minimum scales. Default for x and y are 1.
